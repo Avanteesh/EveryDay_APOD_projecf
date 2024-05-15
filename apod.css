@@ -1,0 +1,76 @@
+*,*::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: #f5f4f4;
+}
+@font-face {
+    font-family: time-clock;
+    src: url(timeclock.ttf) format(truetype);
+}
+:root {
+    ---background-color: #20222bee;
+}
+body {
+    display: grid;
+    place-items: center;
+    background: var(---background-color);
+    min-width: 60vh;
+    overflow: none;
+}
+.container {
+    display: grid;
+    place-items: center;
+    margin-top: 5vh;
+    padding: 8px;
+}
+.container .heading {
+    font-size: 2.0rem;
+    font-weight:bold;
+    padding: 20px;
+}
+.heading header::after {
+    content:"";
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: 10px;
+    background: #6265faf3;
+    height: 4px;
+    width:97%;
+    border-radius: 30px;
+}
+.heading header span {
+    font-family: time-clock;
+} 
+.container .media-container {
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+.media-container .title-of-media {
+    padding: 15px;
+    margin: 5px;
+}
+.media-container .title-of-media h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.media-container .image-container {
+    padding: 12px;
+}
+.image-container p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.media-container .text-content {
+    padding: 10px;
+    margin: 5px;
+    width: 75%;
+}
+.text-content p {
+    font-size: 1.19rem;
+}
+
